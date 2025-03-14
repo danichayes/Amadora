@@ -124,3 +124,31 @@
     @apply bg-background text-foreground;
   }
 }
+
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+/* Authentication Page Styles */
+.auth-container {
+  @apply flex min-h-screen items-center justify-center bg-gray-100 p-4;
+}
+
+.auth-card {
+  @apply bg-white p-6 rounded-2xl shadow-lg w-full max-w-sm;
+}
+
+.auth-heading {
+  @apply text-xl font-bold text-center;
+}
+
+.auth-input {
+  @apply mt-4;
+}
+
+.auth-button {
+  @apply mt-4 w-full;
+}
+
+.auth-message {
+  @apply text-red-500 text-sm mt-2;
+}
